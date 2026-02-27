@@ -1,14 +1,3 @@
-import { defineConfig } from 'vite'
-import laravel from 'laravel-vite-plugin'
-
-export default defineConfig({
-  plugins: [
-    laravel({
-      input: ['resources/js/app.js', 'resources/css/app.css'],
-      refresh: true,
-    }),
-  ],
-})
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
 import vue from "@vitejs/plugin-vue";
@@ -42,7 +31,7 @@ export default defineConfig({
         }
     },
     build: {
-        outDir: "public/build", // output folder
+        outDir: "public/build",
         emptyOutDir: true,
     },
 });
