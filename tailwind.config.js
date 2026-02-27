@@ -1,7 +1,13 @@
 module.exports = {
-  content: ['./resources/**/*.blade.php', './resources/**/*.js', './resources/**/*.vue'],
-  theme: { extend: {} },
-  plugins: [],
+    content: ['./resources/**/*.blade.php', './resources/**/*.js', './resources/**/*.vue'],
+    theme: {
+        extend: {
+            colors: {
+                'crypto-accent': '#1fb6ff'
+            }
+        }
+    },
+    plugins: [],
 }
 import defaultTheme from "tailwindcss/defaultTheme";
 
