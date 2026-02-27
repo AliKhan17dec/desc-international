@@ -1,0 +1,71 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Documentation
+README.md
+*.md
+CLOUDPANEL.md
+important.md
+
+# Node modules and dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Vendor (will be installed in container)
+# vendor
+
+# Environment files (mounted as volume)
+# .env
+.env.backup
+.env.example
+
+# IDE and editors
+.idea
+.vscode
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Storage and cache (mounted as volumes)
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+bootstrap/cache/*
+
+# Tests
+tests
+phpunit.xml
+.phpunit.result.cache
+
+# Build artifacts
+public/build
+public/hot
+public/storage
+
+# Scripts
+*.sh
+*.ps1
+deploy.sh
+fix_names.ps1
+rename_images.sh
+
+# Temporary files
+*.txt
+asset_images.txt
+image_list.txt
+old.htaccess
+oldhot
+oldmanifest.json
+
+# Desci crypto folder (if not needed)
+desci-crypto
