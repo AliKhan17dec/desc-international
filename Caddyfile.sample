@@ -1,0 +1,10 @@
+# Copy this to `Caddyfile` and replace the placeholders below.
+
+# Replace with your actual domain and email. Make sure DNS A record points to your server IP.
+desci.international {
+    encode gzip zstd
+    reverse_proxy app:80
+    tls you@example.com
+}
+
+# If you have multiple domains, list them on the first line separated by commas.
