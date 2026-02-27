@@ -16,7 +16,13 @@ services:
       - caddy_config:/config
     depends_on:
       - app
+    networks:
+      - desci-network
 
 volumes:
   caddy_data:
   caddy_config:
+
+networks:
+  desci-network:
+    external: false
